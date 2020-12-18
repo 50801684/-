@@ -15,7 +15,7 @@ Surge 4.0
 [Script]
 腾讯新闻 = type=cron,cronexp=0 8 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js,script-update-interval=0
 
-腾讯新闻 = type=http-request,pattern=https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\?,script-path=txnews2.js, requires-body=true
+腾讯新闻 = type=http-request,pattern=https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\?,script-path=txnews.js, requires-body=true
 
 ~~~~~~~~~~~~~~~~~~~~~
 Loon 2.1.0+
@@ -23,7 +23,7 @@ Loon 2.1.0+
 # 本地脚本
 cron "04 00 * * *" script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js, enabled=true, tag=腾讯新闻
 
-http-request https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? script-path=txnews2.js, requires-body=true
+http-request https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? script-path=txnews.js, requires-body=true
 
 -----------------
 
@@ -31,7 +31,7 @@ QX 1.0.7+ :
  [task_local]
 0 9 * * * txnews.js, tag=腾讯新闻
  [rewrite_local]
-https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? url script-request-body txnews2.js
+https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? url script-request-body txnews.js
 
 ~~~~~~~~~~~~~~~~~~
  [MITM]
