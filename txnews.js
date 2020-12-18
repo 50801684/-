@@ -70,7 +70,7 @@ if ($request && $request.method != 'OPTIONS' && $request.url.match(/user\/event\
 if ($request && $request.method != 'OPTIONS' && $request.url.match(/user\/event\/report\?/)&&$request.body.indexOf("video_read")!= -1) {
   const videoVal =  $request.url
   sy.log(`videoVal:${videoVal}`)
-  if (videoVal) sy.setdata(videoVal,  'video_txnews2')
+  if (videoVal) sy.setdata(videoVal,  'video_txnews')
   sy.msg(cookieName, `获取视频地址: 成功🎉`, ``)
   }
 
