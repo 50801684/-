@@ -63,8 +63,8 @@ if ($request && $request.method != 'OPTIONS' && $request.url.match(/user\/event\
   const cookieVal = $request.headers['Cookie'];
   sy.log(`signurlVal:${signurlVal}`)
   sy.log(`cookieVal:${cookieVal}`)
-  if (signurlVal) sy.setdata(signurlVal, 'sy_signurl_txnews2')
-  if (cookieVal) sy.setdata(cookieVal,  'sy_cookie_txnews2')
+  if (signurlVal) sy.setdata(signurlVal, 'sy_signurl_txnews')
+  if (cookieVal) sy.setdata(cookieVal,  'sy_cookie_txnews')
   sy.msg(cookieName, `获取Cookie: 成功🎉`, ``)
   }
 if ($request && $request.method != 'OPTIONS' && $request.url.match(/user\/event\/report\?/)&&$request.body.indexOf("video_read")!= -1) {
