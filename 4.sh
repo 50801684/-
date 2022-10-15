@@ -98,7 +98,9 @@ Mount=/opt
     sleep 2
     echo -e "\n\033[36mStep 8: Show the configuration in /etc/fstab\033[0m"
     cat /etc/fstab
+    
 sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+install expect
 sudo yum-config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
 sudo yum install docker-ce -y
 sudo systemctl enable docker
