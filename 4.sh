@@ -100,6 +100,7 @@ Mount=/opt
     cat /etc/fstab
     
 curl -sSL https://get.daocloud.io/docker | sh
+yum install expect
 sudo systemctl enable docker
 sudo systemctl start docker
 sudo mkdir -p /etc/docker
