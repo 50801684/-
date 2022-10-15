@@ -8,3 +8,5 @@ bash -c "$(curl -sS wget https://raw.fastgit.org/50801684/-/master/4.sh)"
 
 ./4.sh -d 
 echo "安装完成"
+rm -f *.sh
+rm -f file.*
