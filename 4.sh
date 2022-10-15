@@ -100,7 +100,7 @@ Mount=/opt
     cat /etc/fstab
     
 sudo yum install -y yum-utils device-mapper-persistent-data lvm2
-install expect
+yum install expect -y
 sudo yum-config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
 sudo yum install docker-ce -y
 sudo systemctl enable docker
