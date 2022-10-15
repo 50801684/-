@@ -99,12 +99,7 @@ Mount=/opt
     echo -e "\n\033[36mStep 8: Show the configuration in /etc/fstab\033[0m"
     cat /etc/fstab
     
-sudo yum install -y yum-utils device-mapper-persistent-data lvm2
-yum install expect -y
-sudo yum-config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
-sudo yum install docker-ce -y
-sudo systemctl enable docker
-sudo systemctl start docker
+curl -sSL https://get.daocloud.io/docker | sh
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
