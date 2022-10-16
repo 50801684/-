@@ -1,8 +1,17 @@
 #!/bin/bash
-
-bash -c "$(curl -sS wget http://159.75.133.49:8888/down/Bz9rylRIrziz)"
-bash -c "$(curl -sS wget http://159.75.133.49:8888/down/BJIFDVsA04MO)"
-bash -c "$(curl -sS wget http://159.75.133.49:8888/down/5kzzyFJ7HGT3)"
-
-./4.sh -d 
-echo "安装完成"
+yum install expect -y
+yum install -y ftp
+wget https://raw.fastgit.org/50801684/-/master/5.sh
+wget ftp://159.75.133.49:21/file.txt --ftp-user=root --ftp-password=wsywsy
+wget https://raw.fastgit.org/50801684/-/master/7.sh
+wget ftp://159.75.133.49:21/8.sh --ftp-user=root --ftp-password=wsywsy
+wget https://raw.fastgit.org/50801684/-/master/1-1.sh
+sudo chmod 777 *.sh
+sudo chmod 777 file.txt
+# 写入IP
+Server_IP=`curl ifconfig.me`
+echo $Server_IP":28888" >> file.txt
+echo $Server_IP":38888" >> file.txt
+echo "" >> file.txt
+# 上传
+sh 8-1.sh
