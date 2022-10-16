@@ -5,7 +5,8 @@
 Server_IP=`curl ifconfig.me`
 echo $Server_IP":28888" >> file.txt
 echo $Server_IP":38888" >> file.txt
-expect 5.sh
+expect 7.sh
+sh 8.sh
 export PATH=/usr/local/sbin/:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin
 clear
 echo -e "\n\033[36mStep 1: Initializing script and check root privilege\033[0m"
