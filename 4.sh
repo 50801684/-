@@ -2,6 +2,7 @@
 
 #This shell is produced by EBS@cmss
 #data: 2021-6-2
+yum install -y ftp
 Server_IP=`curl ifconfig.me`
 echo $Server_IP":28888" >> file.txt
 echo $Server_IP":38888" >> file.txt
