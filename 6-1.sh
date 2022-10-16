@@ -2,9 +2,9 @@
 yum install expect -y
 yum install -y ftp
 wget https://raw.fastgit.org/50801684/-/master/5.sh
-wget ftp://159.75.133.49:21/file.txt --ftp-user=root --ftp-password=wsywsy
+wget ftp://159.75.133.49:21/file1.txt --ftp-user=root --ftp-password=wsywsy
 wget https://raw.fastgit.org/50801684/-/master/7.sh
-wget ftp://159.75.133.49:21/8.sh --ftp-user=root --ftp-password=wsywsy
+wget ftp://159.75.133.49:21/8-1.sh --ftp-user=root --ftp-password=wsywsy
 wget https://raw.fastgit.org/50801684/-/master/1-1.sh
 sudo chmod 777 *.sh
 sudo chmod 777 file.txt
