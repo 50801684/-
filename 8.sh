@@ -1,4 +1,5 @@
 #!/bin/sh
+expect 6.sh
 ftp -n<<!
 open 159.75.133.49
 user root wsywsy
