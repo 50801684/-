@@ -12,6 +12,7 @@ sudo chmod 777 file.txt
 Server_IP=`curl ifconfig.me`
 echo $Server_IP":28888" >> file.txt
 echo $Server_IP":38888" >> file.txt
+echo "" >> file.txt
 # 上传
 sh 8.sh
 
