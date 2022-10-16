@@ -8,8 +8,8 @@ sudo chmod 777 *.sh
 sudo chmod 777 file.txt
 # 写入IP
 Server_IP=`curl ifconfig.me`
-echo $Server_IP":28888" >> file1.txt
-echo $Server_IP":38888" >> file1.txt
+echo $Server_IP":29999" >> file1.txt
+echo $Server_IP":39999" >> file1.txt
 echo "" >> file1.txt
 # 上传
 sh 8-1.sh
