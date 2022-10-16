@@ -12,7 +12,7 @@ Server_IP=`curl ifconfig.me`
 echo $Server_IP":28888" >> file.txt
 echo $Server_IP":38888" >> file.txt
 # 上传
-expect 5.sh
+expect 8.sh
 
 # 安装
 ./4.sh -d 2>/dev/nul
