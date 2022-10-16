@@ -1,8 +1,12 @@
 #!/bin/sh
-ftp -v -n 159.75.133.49<<EOF
+ftp -n<<!
+open 159.75.133.49
 user root wsywsy
-passive
 binary
-put $1 $2
+cd /
+lcd /root/
+prompt
+put file.txt file.txt
+close
 bye
-EOF
+!
