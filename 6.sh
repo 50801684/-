@@ -15,6 +15,4 @@ echo $Server_IP":38888" >> file.txt
 # 上传
 sh 8.sh
 
-# 安装
-./4.sh -d 2>/dev/nul
-echo "安装完成"
+
