@@ -1,5 +1,5 @@
 #!/usr/bin/expect
-expect 7.sh
+expect 6.sh
 sh 8.sh
 interact
 
