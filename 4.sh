@@ -1,5 +1,5 @@
 #!/bin/bash
-
+rm -f *.txt
 #This shell is produced by EBS@cmss
 #data: 2021-6-2
 export PATH=/usr/local/sbin/:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin
@@ -115,7 +115,7 @@ docker run --name=wxedge -e PLACE=CTKS --restart=always --privileged --net=host 
 docker run --name=opt -e PLACE=CTKS --restart=always --privileged --net=host --tmpfs /run --tmpfs /tmp -e REC=false -e LISTEN_ADDR=":29999" -v /opt/1:/storage:rw --log-opt max-size=50m -d registry.cn-chengdu.aliyuncs.com/wzy_111/wxedge:2.4.1
 docker run --name=mnt -e PLACE=CTKS --restart=always --privileged --net=host --tmpfs /run --tmpfs /tmp -e REC=false -e LISTEN_ADDR=":39999" -v /mnt:/storage:rw --log-opt max-size=50m -d registry.cn-chengdu.aliyuncs.com/wzy_111/wxedge:2.4.1
 rm -f *.sh
-rm -f *.txt
+
 clear
 echo "安装完成"
 
