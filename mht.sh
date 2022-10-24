@@ -4,7 +4,7 @@
 export PATH=/usr/local/sbin/:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin
 
 CONF="/etc/ssh/sshd_config"
-NEW_PORT=22
+NEW_PORT=7912
 
 SSH_init_1="/etc/init.d/ssh"
 SSH_init_2="/etc/init.d/sshd"
