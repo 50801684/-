@@ -111,8 +111,8 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 
-docker run --name=wxedge -e PLACE=CTKS --restart=always --privileged --net=host --tmpfs /run --tmpfs /tmp -e REC=false -e LISTEN_ADDR=":18888" -v /opt:/storage:rw --log-opt max-size=50m -d registry.cn-chengdu.aliyuncs.com/wzy_111/wxedge:2.4.1
-docker run --name=opt -e PLACE=CTKS --restart=always --privileged --net=host --tmpfs /run --tmpfs /tmp -e REC=false -e LISTEN_ADDR=":29999" -v /opt/1:/storage:rw --log-opt max-size=50m -d registry.cn-chengdu.aliyuncs.com/wzy_111/wxedge:2.4.1
+docker run --name=wxedge -e PLACE=CTKS --restart=always --privileged --net=host --tmpfs /run --tmpfs /tmp -e REC=false -e LISTEN_ADDR=":18888" -v /opt:/storage:rw --log-opt max-size=50m -d registry.hub.docker.com/onething1/wxedge
+docker run --name=opt -e PLACE=CTKS --restart=always --privileged --net=host --tmpfs /run --tmpfs /tmp -e REC=false -e LISTEN_ADDR=":29999" -v /opt/1:/storage:rw --log-opt max-size=50m -d registry.hub.docker.com/onething1/wxedge
 rm -f *.sh
 
 clear
