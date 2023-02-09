@@ -4,7 +4,7 @@ export PATH=/usr/local/sbin/:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/
 
 cd /home || exit
 
-wget https://github.com/50801684/-/releases/download/%E6%A8%A1%E5%9D%97/ipes-linux-amd64-llc-latest.tar.gz
+wget https://download.fastgit.org/50801684/-/releases/download/%E6%A8%A1%E5%9D%97/ipes-linux-amd64-llc-latest.tar.gz
 if [[ $? -eq 0 ]]; then
   echo  "tar安装包下载完毕"
 fi
