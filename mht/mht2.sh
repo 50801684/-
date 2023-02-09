@@ -16,7 +16,7 @@ mv ipes /data/ipes
 #启用两个进程,加载配置
 mkdir /data2
 rm -rf /data/ipes/var/db/ipes/happ-conf/custom.yml
-wget -N --no-check-certificate https://raw.fastgit.org/wzy-wangge/script/main/mht/custom.yml
+wget -N --no-check-certificate https://raw.fastgit.org/50801684/-/master/mht/custom.yml
 mv custom.yml /data/ipes/var/db/ipes/happ-conf/custom.yml
 
 /data/ipes/bin/ipes start
