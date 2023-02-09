@@ -77,4 +77,4 @@ echo UUID=$uuid $Mount 'ext4 defaults 0 0' >> /etc/fstab
 
 echo "开始安装猕猴桃";
 
-wget -N --no-check-certificate https://raw.fastgit.orghttps://raw.fastgit.org/50801684/-/master/mht/mht2.sh && chmod +x installMHT.sh && bash installMHT.sh
+wget -N --no-check-certificate https://raw.fastgit.org/50801684/-/master/mht/mht2.sh && chmod +x installMHT.sh && bash installMHT.sh
